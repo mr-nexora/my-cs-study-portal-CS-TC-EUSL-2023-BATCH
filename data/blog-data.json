@@ -1,0 +1,69 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Mastering Data Structures: A Comprehensive Guide for CS Students",
+      "summary": "Learn the essential data structures every computer science student should know, with practical examples and implementation tips.",
+      "category": "Study Guide",
+      "author": "Dr. Sarah Johnson",
+      "date": "2025-01-15",
+      "imageURL": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "authorAvatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
+      "authorBio": "Professor of Computer Science with 15+ years of teaching experience and research in algorithms.",
+      "tags": ["Data Structures", "Algorithms", "Study Tips", "Computer Science"],
+      "content": "<h2>Introduction to Data Structures</h2><p>Data structures form the foundation of computer science and programming. Understanding them is crucial for writing efficient code and solving complex problems.</p><h3>Why Data Structures Matter</h3><p>Data structures help organize and store data in ways that make it efficient to access and modify. The choice of data structure can significantly impact the performance of your algorithms.</p><h2>Common Data Structures</h2><h3>Arrays</h3><p>Arrays are the simplest data structure, storing elements in contiguous memory locations. They offer O(1) access time but fixed size.</p><h3>Linked Lists</h3><p>Linked lists consist of nodes that point to the next element, allowing dynamic memory allocation and efficient insertions/deletions.</p><h3>Trees</h3><p>Tree structures like binary search trees provide efficient searching, insertion, and deletion operations with O(log n) time complexity in balanced cases.</p><h2>Choosing the Right Data Structure</h2><p>Consider factors like the type of operations you'll perform most frequently, memory constraints, and the expected size of your data.</p>"
+    },
+    {
+      "id": 2,
+      "title": "10 Essential Debugging Techniques Every Programmer Should Know",
+      "summary": "Discover proven debugging strategies that will save you hours of frustration and help you become a more efficient developer.",
+      "category": "CS Tips",
+      "author": "Mike Chen",
+      "date": "2025-01-10",
+      "imageURL": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "authorAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
+      "authorBio": "Senior Software Engineer with expertise in full-stack development and debugging complex systems.",
+      "tags": ["Debugging", "Programming", "Development", "Best Practices"],
+      "content": "<h2>The Art of Debugging</h2><p>Debugging is an essential skill that separates novice programmers from experienced developers. It's not just about fixing errors but understanding why they occur.</p><h3>1. Understand the Error Message</h3><p>Always read error messages carefully. They often contain valuable information about what went wrong and where.</p><h3>2. Use Print Statements Strategically</h3><p>Strategic placement of print statements can help you track variable values and program flow without complex debugging tools.</p><h3>3. Leverage Debugging Tools</h3><p>Modern IDEs come with powerful debugging features. Learn to use breakpoints, step-through execution, and variable inspection.</p><h2>Advanced Techniques</h2><h3>Binary Search Debugging</h3><p>When dealing with large codebases, use a binary search approach to quickly isolate the problematic section.</p><h3>Rubber Duck Debugging</h3><p>Explaining your code to someone else (or even a rubber duck) can help you spot issues you might have overlooked.</p>"
+    },
+    {
+      "id": 3,
+      "title": "The Future of AI in Software Development: Trends to Watch in 2025",
+      "summary": "Explore how artificial intelligence is reshaping the software development landscape and what it means for developers.",
+      "category": "Industry Trend",
+      "author": "Dr. Amanda Rodriguez",
+      "date": "2025-01-05",
+      "imageURL": "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "authorAvatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
+      "authorBio": "AI Researcher and Tech Industry Analyst focusing on emerging technologies and their impact on development practices.",
+      "tags": ["AI", "Machine Learning", "Software Development", "Future Trends"],
+      "content": "<h2>The AI Revolution in Development</h2><p>Artificial intelligence is no longer a futuristic concept—it's actively transforming how we write, test, and maintain software.</p><h3>AI-Powered Code Generation</h3><p>Tools like GitHub Copilot are changing how developers write code, offering intelligent suggestions and auto-completion based on context.</p><h3>Automated Testing and QA</h3><p>AI algorithms can generate test cases, identify edge cases, and even predict where bugs are most likely to occur in your codebase.</p><h2>Emerging Trends</h2><h3>Low-Code/No-Code Platforms</h3><p>AI is making it possible for non-programmers to create applications through visual interfaces and natural language commands.</p><h3>Intelligent Code Review</h3><p>AI systems can now review code for quality, security vulnerabilities, and adherence to best practices more consistently than human reviewers.</p><h2>What This Means for Developers</h2><p>Rather than replacing developers, AI is augmenting their capabilities and allowing them to focus on higher-level problem-solving.</p>"
+    },
+    {
+      "id": 4,
+      "title": "Building Your First Web Application: A Step-by-Step Tutorial",
+      "summary": "A beginner-friendly guide to creating your first web application from scratch using modern technologies.",
+      "category": "Study Guide",
+      "author": "Jessica Williams",
+      "date": "2024-12-28",
+      "imageURL": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "authorAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
+      "authorBio": "Web Development Instructor and Full-Stack Developer passionate about teaching programming fundamentals.",
+      "tags": ["Web Development", "Tutorial", "HTML", "CSS", "JavaScript"],
+      "content": "<h2>Getting Started with Web Development</h2><p>Building your first web application can seem daunting, but breaking it down into manageable steps makes the process approachable.</p><h3>Setting Up Your Development Environment</h3><p>Start with the basics: a code editor, web browser, and local server. Visual Studio Code is an excellent choice for beginners.</p><h3>Understanding the Three Pillars</h3><p>Every web application relies on HTML for structure, CSS for presentation, and JavaScript for interactivity.</p><h2>Building the Application</h2><h3>Creating the HTML Structure</h3><p>Design a clean, semantic HTML structure that forms the foundation of your application.</p><h3>Styling with CSS</h3><p>Use CSS to make your application visually appealing and responsive across different devices.</p><h3>Adding Interactivity with JavaScript</h3><p>Implement JavaScript to handle user interactions, validate input, and dynamically update the page content.</p><h2>Deployment and Next Steps</h2><p>Learn how to deploy your application to a web server and explore frameworks that can streamline future projects.</p>"
+    },
+    {
+      "id": 5,
+      "title": "Optimizing Database Queries for Better Performance",
+      "summary": "Learn practical techniques to improve your database query performance and reduce application latency.",
+      "category": "CS Tips",
+      "author": "David Kim",
+      "date": "2024-12-20",
+      "imageURL": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "authorAvatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
+      "authorBio": "Database Administrator and Performance Optimization Specialist with 10+ years of experience.",
+      "tags": ["Database", "Performance", "SQL", "Optimization"],
+      "content": "<h2>The Importance of Query Optimization</h2><p>Slow database queries can cripple application performance. Understanding how to optimize them is crucial for building responsive applications.</p><h3>Understanding Query Execution Plans</h3><p>Learn to read and interpret query execution plans to identify performance bottlenecks in your database queries.</p><h3>Indexing Strategies</h3><p>Proper indexing is one of the most effective ways to improve query performance. Understand when and how to create indexes.</p><h2>Common Optimization Techniques</h2><h3>Avoiding N+1 Query Problems</h3><p>Learn to recognize and eliminate N+1 query patterns that can dramatically slow down your application.</p><h3>Query Caching</h3><p>Implement caching strategies to reduce database load for frequently executed queries with stable results.</p><h3>Database Normalization and Denormalization</h3><p>Understand when to normalize your database for integrity and when to denormalize for performance.</p><h2>Advanced Optimization</h2><p>Explore advanced techniques like query rewriting, connection pooling, and database partitioning for high-performance applications.</p>"
+    }
+  ]
+}

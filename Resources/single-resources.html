@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Journey - Premium Educational Resources</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!--Main CSS-->
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/single-resources.css">
+
+
+
+</head>
+<body>
+
+    
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="resources.html" class="back-btn">← Back to Archive</a>
+            <h1>Resource Details</h1>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div id="detail-content">
+                <!-- Resource details will be dynamically loaded here -->
+            </div>
+            <div id="loading" class="loading">
+                <p>Loading resource details...</p>
+            </div>
+            <div id="not-found" class="not-found" style="display: none;">
+                <h2>Resource Not Found</h2>
+                <p>The requested resource could not be found.</p>
+                <a href="resources.html" class="back-to-archive">Back to Archive</a>
+            </div>
+
+            <!-- Share Section -->
+            <section class="share-section" id="share-section" style="display: none;">
+                <h3>Share this Resource</h3>
+                <div class="share-buttons">
+                    <button id="copy-link" class="share-btn copy">
+                        <i class="fas fa-link"></i>
+                        <span>Copy Link</span>
+                    </button>
+                    <a href="#" id="share-facebook" class="share-btn facebook" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" id="share-twitter" class="share-btn twitter" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" id="share-linkedin" class="share-btn linkedin" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" id="share-instagram" class="share-btn instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" id="share-github" class="share-btn github" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Contact Form Section -->
+            <section class="contact-section">
+                <h3>Need Help?</h3>
+                <p>If you have any questions or issues with this resource, feel free to contact us:</p>
+                <div class="contact-form-container">
+                    <iframe src="https://whatsform.com/ryfgvu" width="100%" height="600" frameBorder="0"></iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Brand & Mission Column -->
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-graduation-cap logo-icon"></i>
+                        <span class="logo-text">CS Journey</span>
+                    </a>
+                    <p class="mission-statement">Organizing your Computer Science degree journey with comprehensive resources and expert guidance.</p>
+                    
+                    <div class="newsletter-form">
+                        <h3>Subscribe to our newsletter</h3>
+                        <div class="newsletter-input">
+                            <input type="email" placeholder="Your email address">
+                            <button class="newsletter-btn">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="resources.html"><i class="fas fa-book"></i> Resources</a></li>
+                        <li><a href="team.html"><i class="fas fa-users"></i> Our Team</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="courses.html"><i class="fas fa-laptop-code"></i> Courses</a></li>
+                        <li><a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social & Legal Column -->
+                <div class="footer-social">
+                    <h3 class="footer-heading">Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" class="social-icon" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="social-icon" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com" class="social-icon" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://telegram.org" class="social-icon" target="_blank" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@csjourney.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Education Hub, Tech City</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 CS Journey. All Rights Reserved. Designed by Alex Johnson</p>
+                <div class="legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="../js/footer.js"></script>
+    <script src="../js/single-resources.js"></script>
+
+</body>
+</html>

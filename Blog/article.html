@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Journey - Premium Educational Resources</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!--Main CSS-->
+    <link rel="stylesheet" href="../css/single-article.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+</head>
+<body>
+    <header class="article-header">
+        <div class="container">
+            <a href="blog.html" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Blog List
+            </a>
+
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <div class="content-wrapper">
+            <article id="article-detail" class="article-main">
+                <div id="loading-message" class="loading">
+                    <div class="loading-spinner"></div>
+                    Loading article...
+                </div>
+                <div id="error-message" class="error" style="display: none;">
+                    <i class="fas fa-exclamation-triangle fa-2x"></i>
+                    <h3>Article Not Found</h3>
+                    <p>The article you're looking for doesn't exist or has been moved.</p>
+                    <a href="blog.html" class="back-to-blog-btn">Back to Blog</a>
+                </div>
+                <!-- Article content will be dynamically loaded here -->
+            </article>
+
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3>About Author</h3>
+                    <div class="author-info">
+                        <img id="author-avatar" src="" alt="Author Avatar" class="author-avatar">
+                        <div class="author-details">
+                            <h4 id="author-name">Author Name</h4>
+                            <p id="author-bio">Author bio will appear here</p>
+                            <div class="author-social">
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Table of Contents</h3>
+                    <div id="table-of-contents" class="table-of-contents">
+                        <!-- Table of contents will be dynamically generated here -->
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Related Articles</h3>
+                    <div id="related-articles" class="related-articles">
+                        <!-- Related articles will be dynamically loaded here -->
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Share This Article</h3>
+                    <div class="share-buttons">
+                        <button class="share-btn facebook" data-platform="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                        <button class="share-btn twitter" data-platform="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button class="share-btn linkedin" data-platform="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </button>
+                        <button class="share-btn copy-link" data-platform="copy">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+<!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Brand & Mission Column -->
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-graduation-cap logo-icon"></i>
+                        <span class="logo-text">CS Journey</span>
+                    </a>
+                    <p class="mission-statement">Organizing your Computer Science degree journey with comprehensive resources and expert guidance.</p>
+                    
+                    <div class="newsletter-form">
+                        <h3>Subscribe to our newsletter</h3>
+                        <div class="newsletter-input">
+                            <input type="email" placeholder="Your email address">
+                            <button class="newsletter-btn">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="resources.html"><i class="fas fa-book"></i> Resources</a></li>
+                        <li><a href="team.html"><i class="fas fa-users"></i> Our Team</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="courses.html"><i class="fas fa-laptop-code"></i> Courses</a></li>
+                        <li><a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social & Legal Column -->
+                <div class="footer-social">
+                    <h3 class="footer-heading">Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" class="social-icon" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="social-icon" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com" class="social-icon" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://telegram.org" class="social-icon" target="_blank" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@csjourney.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Education Hub, Tech City</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 CS Journey. All Rights Reserved. Designed by Alex Johnson</p>
+                <div class="legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="../js/single-article.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+
+
+</body>
+</html>

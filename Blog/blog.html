@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Journey - Premium Educational Resources</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!--Main CSS-->
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/tags.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+
+</head>
+<body>
+
+    <!-- Top Header Section -->
+    <div class="top-header">
+        <div class="top-header-container">
+            <!-- News Ticker -->
+            <div class="news-ticker">
+                <div class="ticker-content">
+                    <span class="ticker-label">Latest News:</span>
+                    <span class="ticker-item">New Python course now available!</span>
+                    <span class="ticker-item">Upcoming webinar: Introduction to Machine Learning</span>
+                    <span class="ticker-item">Summer coding challenge starts next week</span>
+                    <span class="ticker-item">New study groups forming for Data Structures</span>
+                </div>
+            </div>
+            
+            <!-- Telegram Button -->
+            <a href="https://t.me/csjourney" target="_blank" class="telegram-btn">
+                <i class="fab fa-telegram-plane"></i>
+                Join Telegram
+            </a>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <!-- Logo/Brand Area -->
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap logo-icon"></i>
+                <span class="logo-hero">CS Journey</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html" >Home</a></li>
+                    <li><a href="../Resources/resources.html">Resources</a></li>
+                    <li><a href="../Resources/academic-calendar.html" >Academic Calendar</a></li>
+                    <li><a href="../blog.html"  class="active">Blog</a></li>
+                    <li><a href="../team.html">Team</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>                
+                </ul>
+            </nav>
+
+            
+                <!-- Mobile Menu Button -->
+                <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <blog-header class="blog-header">
+        <div class="container">
+            <h1>Tech Insights & Study Guides</h1>
+            <p class="subtitle">Your resource for CS tips, study guides, and industry trends</p>
+            <div class="header-stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="total-articles">0</span>
+                    <span class="stat-label">Articles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="total-categories">3</span>
+                    <span class="stat-label">Categories</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2025</span>
+                    <span class="stat-label">Established</span>
+                </div>
+            </div>
+        </div>
+    </blog-header>
+
+    <main class="container">
+        <section class="featured-articles" id="featured-articles">
+            <!-- Featured articles will be dynamically loaded here -->
+        </section>
+
+        <section class="filters-section">
+            <div class="filter-group">
+                <label for="category-filter">Filter by Category:</label>
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="Study Guide">Study Guide</option>
+                    <option value="CS Tips">CS Tips</option>
+                    <option value="Industry Trend">Industry Trend</option>
+                </select>
+            </div>
+            <div class="search-group">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="search-input" placeholder="Search articles...">
+                <button id="clear-search" class="clear-search-btn" style="display: none;">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="articles-section">
+            <div class="section-header">
+                <h2>Latest Articles</h2>
+                <div class="sort-options">
+                    <label for="sort-by">Sort by:</label>
+                    <select id="sort-by">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="title">Title A-Z</option>
+                    </select>
+                </div>
+            </div>
+
+            <section id="article-list" class="articles-grid">
+                <!-- Articles will be dynamically loaded here -->
+            </section>
+        </section>
+
+        <div id="loading-message" class="loading">
+            <div class="loading-spinner"></div>
+            Loading articles...
+        </div>
+        <div id="no-articles-message" class="no-articles" style="display: none;">
+            <i class="fas fa-search fa-2x"></i>
+            <h3>No articles found</h3>
+            <p>Try adjusting your search or filter criteria</p>
+        </div>
+
+        <!-- Pagination Section -->
+        <div class="pagination" id="pagination" style="display: none;">
+            <button id="prev-btn" class="pagination-btn">
+                <i class="fas fa-chevron-left"></i> Previous
+            </button>
+            <div class="page-numbers" id="page-numbers">
+                <!-- Page numbers will be dynamically generated here -->
+            </div>
+            <button id="next-btn" class="pagination-btn">
+                Next <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Brand & Mission Column -->
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-graduation-cap logo-icon"></i>
+                        <span class="logo-text">CS Journey</span>
+                    </a>
+                    <p class="mission-statement">Organizing your Computer Science degree journey with comprehensive resources and expert guidance.</p>
+                    
+                    <div class="newsletter-form">
+                        <h3>Subscribe to our newsletter</h3>
+                        <div class="newsletter-input">
+                            <input type="email" placeholder="Your email address">
+                            <button class="newsletter-btn">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="resources.html"><i class="fas fa-book"></i> Resources</a></li>
+                        <li><a href="team.html"><i class="fas fa-users"></i> Our Team</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="courses.html"><i class="fas fa-laptop-code"></i> Courses</a></li>
+                        <li><a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social & Legal Column -->
+                <div class="footer-social">
+                    <h3 class="footer-heading">Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" class="social-icon" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="social-icon" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com" class="social-icon" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://telegram.org" class="social-icon" target="_blank" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@csjourney.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Education Hub, Tech City</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 CS Journey. All Rights Reserved. Designed by Alex Johnson</p>
+                <div class="legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="../js/blog.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+
+
+</body>
+</html>
+    

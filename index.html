@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Journey - Premium Educational Resources</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!--Main CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+
+</head>
+<body>
+
+    <!-- Top Header Section -->
+    <div class="top-header">
+        <div class="top-header-container">
+            <!-- News Ticker -->
+            <div class="news-ticker">
+                <div class="ticker-content">
+                    <span class="ticker-label">Latest News:</span>
+                    <span class="ticker-item">New Python course now available!</span>
+                    <span class="ticker-item">Upcoming webinar: Introduction to Machine Learning</span>
+                    <span class="ticker-item">Summer coding challenge starts next week</span>
+                    <span class="ticker-item">New study groups forming for Data Structures</span>
+                </div>
+            </div>
+            
+            <!-- Telegram Button -->
+            <a href="https://t.me/csjourney" target="_blank" class="telegram-btn">
+                <i class="fab fa-telegram-plane"></i>
+                Join Telegram
+            </a>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <!-- Logo/Brand Area -->
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap logo-icon"></i>
+                <span class="logo-hero">CS Journey</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="Resources/resources.html">Resources</a></li>
+                    <li><a href="Resources/academic-calendar.html" >Academic Calendar</a></li>
+                    <li><a href="Blog/blog.html">Blog</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>                
+                </ul>
+            </nav>
+
+            
+                <!-- Mobile Menu Button -->
+                <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dynamic Hero Section -->
+    <section id="dynamic-hero">
+        <div class="hero-slide active">
+            <div class="hero-content">
+                <h1>Master Computer Science Concepts</h1>
+                <p>Your comprehensive resource hub for quality notes, tutorials, and study materials</p>
+                <a href="#main-cta" class="btn btn-large">Get Started Today <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="hero-slide">
+            <div class="hero-content">
+                <h1>Learn From Industry Experts</h1>
+                <p>Access curated content designed to help you excel in your CS journey</p>
+                <a href="#main-cta" class="btn btn-large">Join Our Community <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="hero-slide">
+            <div class="hero-content">
+                <h1>Build Your Future in Tech</h1>
+                <p>Resources that prepare you for academic success and career advancement</p>
+                <a href="#main-cta" class="btn btn-large">Explore Resources <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="hero-indicators">
+            <div class="indicator active" data-slide="0"></div>
+            <div class="indicator" data-slide="1"></div>
+            <div class="indicator" data-slide="2"></div>
+        </div>
+    </section>
+
+    <!-- Primary CTA Section -->
+    <section id="main-cta">
+        <div class="container">
+            <h2>Don't Miss Out!</h2>
+            <p>Join our community of learners and get access to exclusive resources and updates</p>
+            <a href="#" class="btn btn-large"><i class="fab fa-telegram"></i> Join Our Telegram Channel Now</a>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section id="welcome">
+        <div class="container">
+            <div class="welcome-content">
+                <div class="welcome-text">
+                    <h2>Welcome to CS Journey</h2>
+                    <p>CS Journey was founded with a simple mission: to make quality computer science education accessible to everyone. We believe that learning complex technical concepts shouldn't be a struggle, and that's why we've created this comprehensive resource hub.</p>
+                    <p>Our team of dedicated educators and industry professionals work tirelessly to curate, create, and organize the best learning materials for students at all levels. Whether you're just starting your CS journey or looking to advance your career, we're here to support your growth.</p>
+                    <div class="welcome-stats">
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10K+</h3>
+                            <p>Students Helped</p>
+                        </div>
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Resources</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="welcome-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Students collaborating">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Cards Section -->
+    <section id="features-cards">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose CS Journey?</h2>
+                <p>Discover what makes our educational resources stand out from the rest</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Quality Notes</h3>
+                    <p>Comprehensive, well-structured notes that break down complex topics into easily digestible content.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>Organized Content</h3>
+                    <p>All resources are systematically organized by topic and difficulty level for efficient learning.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Community Support</h3>
+                    <p>Join a vibrant community of learners and get your questions answered by peers and mentors.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>CV Value</h3>
+                    <p>Gain knowledge and skills that directly translate to career advancement and opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Statistics Section -->
+    <section id="stats">
+        <div class="container">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <h3 class="counter" data-target="500">0</h3>
+                    <p>Total PDFs</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="25">0</h3>
+                    <p>Active Team Members</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="10000">0</h3>
+                    <p>Total Students Reached</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="50">0</h3>
+                    <p>Courses Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team CTA Section -->
+    <section id="team-cta">
+        <div class="container">
+            <h2>Meet the Minds Behind CS Journey</h2>
+            <p>Our dedicated team of educators, developers, and content creators work tirelessly to bring you the best learning resources. Get to know the passionate individuals who make CS Journey possible.</p>
+            <a href="team.html" class="btn btn-large">Meet Our Brilliant Team <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+
+    <!-- Final CTA Section -->
+    <section id="final-contact">
+        <div class="container">
+            <h2>Have Questions? We're Here to Help!</h2>
+            <p>Whether you're looking for specific resources, have suggestions for improvement, or just want to connect with our community, we'd love to hear from you.</p>
+            <a href="contact.html" class="btn btn-large btn-accent">Ask a Question / Get in Touch <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Brand & Mission Column -->
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-graduation-cap logo-icon"></i>
+                        <span class="logo-text">CS Journey</span>
+                    </a>
+                    <p class="mission-statement">Organizing your Computer Science degree journey with comprehensive resources and expert guidance.</p>
+                    
+                    <div class="newsletter-form">
+                        <h3>Subscribe to our newsletter</h3>
+                        <div class="newsletter-input">
+                            <input type="email" placeholder="Your email address">
+                            <button class="newsletter-btn">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="resources.html"><i class="fas fa-book"></i> Resources</a></li>
+                        <li><a href="team.html"><i class="fas fa-users"></i> Our Team</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="courses.html"><i class="fas fa-laptop-code"></i> Courses</a></li>
+                        <li><a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social & Legal Column -->
+                <div class="footer-social">
+                    <h3 class="footer-heading">Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" class="social-icon" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="social-icon" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com" class="social-icon" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://telegram.org" class="social-icon" target="_blank" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@csjourney.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Education Hub, Tech City</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 CS Journey. All Rights Reserved. Designed by Alex Johnson</p>
+                <div class="legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+
+
+</body>
+</html>

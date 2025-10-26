@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Calendar - CS Journey</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/academic-calendar.css">
+    <link rel="stylesheet" href="../css/single-resources.css">
+</head>
+<body>
+    <!-- Top Header Section -->
+    <div class="top-header">
+        <div class="top-header-container">
+            <!-- News Ticker -->
+            <div class="news-ticker">
+                <div class="ticker-content">
+                    <span class="ticker-label">Latest News:</span>
+                    <span class="ticker-item">New Python course now available!</span>
+                    <span class="ticker-item">Upcoming webinar: Introduction to Machine Learning</span>
+                    <span class="ticker-item">Summer coding challenge starts next week</span>
+                    <span class="ticker-item">New study groups forming for Data Structures</span>
+                </div>
+            </div>
+            
+            <!-- Telegram Button -->
+            <a href="https://t.me/csjourney" target="_blank" class="telegram-btn">
+                <i class="fab fa-telegram-plane"></i>
+                Join Telegram
+            </a>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <!-- Logo/Brand Area -->
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap logo-icon"></i>
+                <span class="logo-hero">CS Journey</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Resources/resources.html">Resources</a></li>
+                    <li><a href="../Resources/academic-calendar.html" class="active">Academic Calendar</a></li>
+                    <li><a href="../Blog/blog.html">Blog</a></li>
+                    <li><a href="../team.html">Team</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>                
+                </ul>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="calendar-hero">
+        <div class="hero-background">
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Academic Calendar</h1>
+                <p class="hero-subtitle">Plan your study schedule and access daily resources with our interactive calendar</p>
+                <div class="hero-features">
+                    <div class="feature">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Daily Resources</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-book-open"></i>
+                        <span>Study Materials</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-tasks"></i>
+                        <span>Activities & Quizzes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Quick Stats -->
+            <div class="quick-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number" id="total-resources">0</span>
+                        <span class="stat-label">Total Resources</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-day"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number" id="days-with-resources">0</span>
+                        <span class="stat-label">Active Days</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number" id="total-subjects">0</span>
+                        <span class="stat-label">Subjects</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calendar Section -->
+            <section class="calendar-section">
+                <div class="section-header">
+                    <h2>Study Calendar</h2>
+                    <p>Click on any date to view available resources</p>
+                </div>
+
+                <!-- Calendar Navigation -->
+                <div class="calendar-nav">
+                    <button id="prev-year" class="nav-btn year-btn">
+                        <img width="32" height="32" src="https://img.icons8.com/windows/32/chevron-left.png" alt="chevron-left"/>
+                    </button>
+                    <button id="prev-month" class="nav-btn">
+                        <img width="24" height="24" src="https://img.icons8.com/forma-regular-filled-sharp/24/chevron-left.png" alt="chevron-left"/>
+                    </button>
+                    
+                    <div class="month-year-display">
+                        <span id="current-month-year">January 2024</span>
+                        <div class="view-toggle">
+                            <button id="month-view" class="view-btn active">Month</button>
+                            <button id="week-view" class="view-btn">Week</button>
+                        </div>
+                    </div>
+                    
+                    <button id="next-month" class="nav-btn">
+                        <img width="24" height="24" src="https://img.icons8.com/forma-regular-filled-sharp/24/chevron-right.png" alt="chevron-right"/>
+                    </button>
+                    <button id="next-year" class="nav-btn year-btn">
+                        <img width="32" height="32" src="https://img.icons8.com/windows/32/chevron-right.png" alt="chevron-right"/>
+                    </button>
+                </div>
+
+                <!-- Calendar Grid -->
+                <div class="calendar-container">
+                    <div class="calendar-grid" id="calendar-grid">
+                        <!-- Calendar will be dynamically generated here -->
+                    </div>
+                </div>
+
+                <!-- Legend -->
+                <div class="calendar-legend">
+                    <div class="legend-item">
+                        <div class="legend-color has-resources"></div>
+                        <span>Resources Available</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color today"></div>
+                        <span>Today</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color selected"></div>
+                        <span>Selected Date</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resources Section -->
+            <section class="resources-section" id="resources-section">
+                <div class="section-header">
+                    <h2 id="selected-date-title">Select a Date to View Resources</h2>
+                    <p id="selected-date-subtitle">Click on any calendar date to see available study materials</p>
+                </div>
+
+                <div class="resources-container">
+                    <div class="resources-list" id="resources-list">
+                        <!-- Welcome State -->
+                        <div class="welcome-state" id="welcome-state">
+                            <div class="welcome-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h3>Welcome to <br> Academic Calendar</h3>
+                            <div class="welcome-tips">
+                                <div class="tip">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span>Green dates have available resources</span>
+                                </div>
+                                <div class="tip">
+                                    <i class="fas fa-mouse-pointer"></i>
+                                    <span>Click on dates to view resources</span>
+                                </div>
+                                <div class="tip">
+                                    <i class="fas fa-download"></i>
+                                    <span>Access materials directly from Telegram</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Actions -->
+            <section class="quick-actions">
+                <h3>Quick Access</h3>
+                <div class="action-buttons">
+                    <a href="resources.html" class="action-btn">
+                        <i class="fas fa-th-list"></i>
+                        <span>All Resources</span>
+                    </a>
+                    <a href="../index.html" class="action-btn">
+                        <i class="fas fa-home"></i>
+                        <span>Back to Home</span>
+                    </a>
+                    <button id="go-today" class="action-btn">
+                        <i class="fas fa-calendar-day"></i>
+                        <span>Go to Today</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Brand & Mission Column -->
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-graduation-cap logo-icon"></i>
+                        <span class="logo-text">CS Journey</span>
+                    </a>
+                    <p class="mission-statement">Organizing your Computer Science degree journey with comprehensive resources and expert guidance.</p>
+                    
+                    <div class="newsletter-form">
+                        <h3>Subscribe to our newsletter</h3>
+                        <div class="newsletter-input">
+                            <input type="email" placeholder="Your email address">
+                            <button class="newsletter-btn">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="resources.html"><i class="fas fa-book"></i> Resources</a></li>
+                        <li><a href="team.html"><i class="fas fa-users"></i> Our Team</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="courses.html"><i class="fas fa-laptop-code"></i> Courses</a></li>
+                        <li><a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social & Legal Column -->
+                <div class="footer-social">
+                    <h3 class="footer-heading">Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" class="social-icon" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="social-icon" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com" class="social-icon" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://telegram.org" class="social-icon" target="_blank" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@csjourney.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Education Hub, Tech City</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 CS Journey. All Rights Reserved. Designed by Alex Johnson</p>
+                <div class="legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/academic-calendar.js"></script>
+</body>
+</html>
